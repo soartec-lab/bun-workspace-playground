@@ -6,6 +6,8 @@ services:
     working_dir: /app
     tty: true
     stdin_open: true
+    ports:
+      - "5174:5174" # remix dev server
     volumes:
       - ./:/app
       - ~/.bashrc:/root/.bashrc
